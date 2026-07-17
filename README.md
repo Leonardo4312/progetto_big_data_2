@@ -107,3 +107,18 @@ Di seguito è riportata la spiegazione di tutti i file principali che compongono
 - **`run_mac.sh` / `run_windows.bat`**: Script shell/batch comodi per l'avvio congiunto dei servizi frontend e backend.
 - **`translate_app.py`**: Utility script per automatizzare sostituzioni di stringhe di testo nel frontend, utile per internazionalizzazione rapida (es. da ITA a ENG).
 - **`docker-compose.yml`**: Configurazione Docker pronta all'uso per far ruotare un'istanza PostgreSQL isolata se non se ne possiede una installata globalmente.
+
+### Dataset e Risorse
+Il sistema EV-NEXUS necessita di due dataset principali per funzionare correttamente:
+
+Dataset dei veicoli elettrici (formato CSV): contiene le informazioni demografiche e tecniche dei veicoli immatricolati (es. marca, modello, anno, contea, autonomia, ecc.).
+
+Dataset delle infrastrutture di ricarica (formato JSON o Excel): elenco delle stazioni di ricarica con dettagli su posizione, tipo di connettore, potenza erogata e operatore.
+
+Entrambi i dataset sono disponibili per il download nella seguente cartella condivisa su Google Drive:
+
+[Cartella Dataset EV-Nexus (Google Drive)](https://drive.google.com/drive/folders/1XJFGHNOyFYMDM-pEZcivBbpG0aSPisU1?usp=sharing)
+
+Dopo aver scaricato i file, copiali nella cartella data/ (se non esiste, creala nella root del progetto) prima di eseguire gli script di setup del database, come descritto nella Sezione 3.
+
+Nota: Assicurati che i nomi dei file corrispondano a quelli attesi dagli script (database_setup.py e tools.py). Se i nomi differiscono, aggiorna i percorsi nei file di configurazione o rinomina i file scaricati di conseguenza.
