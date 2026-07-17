@@ -1,0 +1,12 @@
+crewai
+langchain
+langchain-openai
+pyspark
+psycopg2-binary
+sqlalchemy
+pandas
+python-dotenv
+fastapi
+uvicorn
+openpyxl
+matplotlib

@@ -1,0 +1,11 @@
+*.csv
+*.json
+*.xlsx
+.env
+__pycache__/
+*.pyc
+venv/
+venv_ev_nexus/
+.DS_Store
+data/
+.\config.py
